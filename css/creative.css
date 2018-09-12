@@ -26,12 +26,12 @@ a {
 }
 
 a:hover {
-  color: #f05f40;
+  color: fuchsia;
 }
 
 p {
   font-family: "Roboto", Helvetica, sans-serif;
-  color: lime;
+  color: #44a8c5;
 	font-weight: 300;
 	line-height: 1.5em;
 	margin: 0 0 1em 0;
@@ -45,8 +45,8 @@ h4,
 h5,
 h6 {
   font-family: "Roboto", Helvetica, sans-serif;
-  color: lime;
-	font-weight: 300;
+  color: fuchsia;
+	font-weight: 400;
 	line-height: 1em;
 	margin: 0 0 1em 0;
 	text-transform: uppercase;
@@ -54,7 +54,9 @@ h6 {
 }
 
 .bg-primary {
-  background-color: gray !important;
+  /*background-color: gray !important;*/
+  background-image: url("../img/cherryblossom.jpg");
+  background-size: cover;
 }
 
 .bg-dark {
@@ -108,7 +110,7 @@ img::-moz-selection {
 #mainNav .navbar-brand {
   font-weight: 500;
   text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.7);
+  color: fuchsia;
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
 }
 
@@ -146,21 +148,21 @@ img::-moz-selection {
     background-color: transparent;
   }
   #mainNav .navbar-brand {
-    color: rgba(255, 255, 255, 0.7);
+    color: white;
   }
   #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-    color: #fff;
+    color: fuchsia;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link {
     padding: 0.5rem 1rem;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus {
-    color: rgba(255, 255, 255, 0.7);
+    color: white;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #fff;
+    color: fuchsia;
   }
   #mainNav.navbar-shrink {
     border-bottom: 1px solid rgba(33, 37, 41, 0.1);
@@ -171,7 +173,7 @@ img::-moz-selection {
     color:#44a8c5;
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #44a8c5;
+    color: white;
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -180,14 +182,14 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color:#44a8c5;
+    color:white;
   }
 }
 
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/technology.jpg");
+  background-image: url("../img/computer.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -202,6 +204,8 @@ header.masthead hr {
 
 header.masthead h1 {
   font-size: 2rem;
+  position: relative;
+  top: 55px;
 }
 
 header.masthead p {
@@ -223,11 +227,15 @@ header.masthead p {
   }
   header.masthead h1 {
     font-size: 3rem;
+    position: relative;
+    top: 70px;
   }
 }
 
 @media (min-width: 1200px) {
   header.masthead h1 {
+    position: relative;
+    top: 70px;
     font-size: 4rem;
   }
 }
@@ -240,7 +248,8 @@ header.masthead p {
   position: relative;
   display: block;
   max-width: 650px;
-  margin: 0 auto;
+  margin: 20px auto;
+  margin-bottom: 0px;
 }
 
 .portfolio-box .portfolio-box-caption {
@@ -252,7 +261,7 @@ header.masthead p {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(240, 95, 64, 0.9);
+  background: rgba(68, 168, 197, 0.5);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -390,7 +399,7 @@ header.masthead p {
 
 @media (min-width: 1200px) {
   .typewriter {
-    width: 630px;
+    width: 650px;
     overflow: hidden;
     border-right: .08em solid white;
     white-space: nowrap;
@@ -410,4 +419,46 @@ header.masthead p {
     from, to { border-color: transparent }
     50% { border-color: white;}
   }
+}
+
+#subtitle {
+  font-weight: 400;
+}
+
+#bio {
+  font-size: 1.2rem;
+}
+
+.sr-icons::before {
+  color: #44a8c5;
+}
+
+#technologies {
+  background-color: black;
+}
+
+.col-lg-8.mx-auto.text-center.bio {
+  background-color: rgba(128, 128, 128, 0.3);
+
+}
+
+#portfolio {
+  background-color: gray;
+}
+
+#contact {
+  background-color: lightgray;
+}
+
+.pink {
+  width: 650px;
+  height: 100px;
+  background-color: rgba(255, 0, 255, 0.3);
+  margin: auto;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+#project-title {
+  padding-top: 40px;
 }

@@ -11,7 +11,7 @@
     <title>Stacey Abbott</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.css" rel="stylesheet">
 
     <!-- Custom fonts for this template -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
@@ -64,7 +64,7 @@
             <!-- <hr> -->
           </div>
           <div class="col-lg-8 mx-auto">
-            <p class="text-faded mb-5"><span style="color:#44a8c5">Full Stack Web Developer</span> living in San Jose, CA.</p>
+            <p id="subtitle" class="text-faded mb-5" style="position: relative; top: 70px; font-size: 1.3rem;"><span style="color:#44a8c5">Full Stack Web Developer</span> living in San Jose, CA.</p>
             <!-- <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a> -->
           </div>
         </div>
@@ -74,21 +74,21 @@
     <section class="bg-primary" id="about">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
+          <div class="col-lg-8 mx-auto text-center bio">
             <h2 class="section-heading text-white">A Little About Myself</h2>
             <hr class="light my-4">
             <img src="img/ballet.jpg" id="ballet">
-            <p class="text-faded mb-4">After graduating from San Jose State University with a bachelor's
+            <p id="bio" class="text-faded mb-4"><span style="color:white;">After graduating from San Jose State University with a bachelor's
               in Kinesiology, I felt that I was not on the path that would lead me to working in a career
               that I was truly passionate about. After spending some time doing some soul-searching, I became
               drawn to the idea of learning to become a software engineer. Thus, began my harrowing journey of
               learning to code. Where, after some introductory self study, I enrolled in an immersive,
               full-time web development bootcamp at Coding Dojo in San Jose, California. I quickly learned
-              that the challenge of learning the ever evolving technologies of software development combined
+              that the challenge of learning the ever evolving technologies of software development, combined
               with the rewarding sense of satisfaction that comes from using your creativity to develop
-              products for the world we live in was something I was truly passionate about and could see
+              products for the world we live in, was something I was truly passionate about and could see
               myself making a career out of for years to come. When I am not developing, I love to nurture
-              my creative side by dancing and teaching dance.</p>
+              my creative side by dancing and teaching dance.</span></p>
             <a class="btn btn-light btn-xl js-scroll-trigger" href="#technologies">Technologies</a>
           </div>
         </div>
@@ -207,96 +207,39 @@
 
     <section class="p-0" id="portfolio">
       <div class="container-fluid p-0">
+        <div class="col-lg-12 text-center">
+          <div id="project-title">
+          <h2 class="section-heading">Projects</h2>
+        </div>
         <div class="row no-gutters popup-gallery">
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/1.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/1.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
+
+
+              <div class="col-lg-4">
+                <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
+                  <iframe width="650" height="350" src="https://www.youtube.com/embed/WXGhZxgf4wk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                </a>
+                <div class="pink">
+                <p style="text-align: center;"><span style="color:black;">Simple Login and Registration app made with Django framework and Python. Utilizes text entry validations, email regex validation, and session.</span></p>
+              </div>
+              </div>
+
+              <div class="col-lg-4">
+                <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
+                  <iframe width="650" height="350" src="https://www.youtube.com/embed/RM3LRrExHtQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                  </a>
+                <div class="pink">
+                <p style="text-align: center;"><span style="color:black;">Mobile app made with xcode and swift which randomly switches between an array of name when button is clicked.</span></p>
+              </div>
+              </div>
+
+              <div class="col-lg-4">
+                 <a class="portfolio-box">
+                   <iframe width="650" height="350" src="https://www.youtube.com/embed/yc7SkBBevvw" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+                 </a>
+                <div class="pink">
+                   <p style="text-align: center;"><span style="color:black;">CRUD app made with Express, MongoDB and Nodejs.</span></p>
                 </div>
               </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/2.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/2.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/3.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/3.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/4.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/4.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/5.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/5.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-4 col-sm-6">
-            <a class="portfolio-box" href="img/portfolio/fullsize/6.jpg">
-              <img class="img-fluid" src="img/portfolio/thumbnails/6.jpg" alt="">
-              <div class="portfolio-box-caption">
-                <div class="portfolio-box-caption-content">
-                  <div class="project-category text-faded">
-                    Category
-                  </div>
-                  <div class="project-name">
-                    Project Name
-                  </div>
-                </div>
-              </div>
-            </a>
           </div>
         </div>
       </div>
@@ -304,8 +247,8 @@
 
     <section class="bg-dark text-white">
       <div class="container text-center">
-        <h2 class="mb-4">Free Download at Start Bootstrap!</h2>
-        <a class="btn btn-light btn-xl sr-button" href="http://startbootstrap.com/template-overviews/creative/">Download Now!</a>
+        <h2 class="mb-4">See All of My Code Here!</h2>
+        <a class="btn btn-light btn-xl sr-button" href="https://github.com/stacecadet17">Check it Out!</a>
       </div>
     </section>
 
@@ -313,21 +256,29 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto text-center">
-            <h2 class="section-heading">Let's Get In Touch!</h2>
+            <h2 class="section-heading">Let's Work Together!</h2>
             <hr class="my-4">
-            <p class="mb-5">Ready to start your next project with us? That's great! Give us a call or send us an email and we will get back to you as soon as possible!</p>
+            <p class="mb-5" style="font-size: 20px;">Feel free to contact me for any opportunities!</p>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-4 ml-auto text-center">
             <i class="fa fa-phone fa-3x mb-3 sr-contact"></i>
-            <p>123-456-6789</p>
+            <p>(408)439-2923</p>
           </div>
           <div class="col-lg-4 mr-auto text-center">
             <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
             <p>
-              <a href="mailto:your-email@your-domain.com">feedback@startbootstrap.com</a>
+              <a href="mailto:your-email@your-domain.com">staceymichelleabbott@gmail.com</a>
             </p>
+          </div>
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-github fa-3x mb-3 sr-contact"></i>
+            <p><a href="https://github.com/stacecadet17">Github</a></p>
+          </div>
+          <div class="col-lg-4 ml-auto text-center">
+            <i class="fa fa-linkedin fa-3x mb-3 sr-contact"></i>
+            <p><a href="https://www.linkedin.com/in/staceymabbott/">LinkedIn</a></p>
           </div>
         </div>
       </div>
